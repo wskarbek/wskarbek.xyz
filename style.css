@@ -20,9 +20,18 @@ a {
   color: #aa94bd
 }
 
-.content {
-  min-height: 500px;
-  margin-bottom: -50px;
+@media only screen and (min-height: 900px) {
+  .content {
+    min-height: 700px;
+    margin-bottom: -50px;
+  }
+}
+
+@media only screen and (max-height: 900px) {
+  .content {
+    min-height: 500px;
+    margin-bottom: -50px;
+  }
 }
 
 .content .sidenav{
