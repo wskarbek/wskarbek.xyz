@@ -9,46 +9,71 @@
     </head>
     <body>
         <div class="header">
-            Wojtek
-            <div class="tab">
-              <button class="tablinks" onclick="openTab(event, 'Me')" id="defaultOpen">About me</button>
-              <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
-              <button class="tablinks" onclick="openTab(event, 'Computerware')">Computerware</button>
-            </div>
+          <center><img src="images/construction.gif"/></center>
+          <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Me')" id="defaultOpen">About me</button>
+            <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
+            <!--<button class="tablinks" onclick="openTab(event, 'Computerware')">Computerware</button>-->
+            <!--<button class="tablinks" onclick="openTab(event, 'Links')">Links</button>-->
+          </div>
         </div>
         <div class="content">
-            
-            <!-- Tab content -->
-            <div id="Me" class="tabcontent">
-              <h3>About me</h3>
-            </div>
-            
-            <div id="Projects" class="tabcontent">
-              <h3>Projects</h3>
-              <h6>Projects I'm working on or wokred in the past</h6>
-            </div>
-            
-            <div id="Computerware" class="tabcontent">
-              <h3>Computerware</h3>
-            </div>
-        </div>
-          <script>
-            function openTab(evt, tabName) {
-              var i, tabcontent, tablinks;
-              tabcontent = document.getElementsByClassName("tabcontent");
-              for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-              }
-              tablinks = document.getElementsByClassName("tablinks");
-              for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-              }
-              document.getElementById(tabName).style.display = "block";
-              evt.currentTarget.className += " active";
-            }
+          
+          <div id="Me" class="tabcontent">
+            <h3>About me</h3>
+            <p>I'm amazing!</p>
+            <h4>Why this website looks like it's from 1995</h4>
+            <p>
+              I miss times when websites were simple and full of colorfull gifs. Since this website is about me, it reflects my nostalgia.
+              My projects are usually made using modern frameworks
+            </p>
+            <img src="images/welcome to the internet.gif"/>
+          </div>
+          
+          <div id="Projects" class="tabcontent">
+            <h1>Projects</h1>
+            <h3>Projects I'm working on or worked in the past</h3>
+            <ul>
+              <li>
+                <div class="project">
+                  <h4>
+                    cocktail-app
+                    <a href="https://github.com/wskarbek/cocktail-app"><img class="list-icon" src="images/github.png"/></a>
+                    <img class="list-icon" src="images/new.gif"/>
+                  </h4>
+                  <span>Cocktail App is a client - server application made using React and Express about various coctail drinks. It was a project for BIU course at PJAIT.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+          <div id="Computerware" class="tabcontent">
+            <h3>Computerware</h3>
+          </div>
 
-            // Get the element with id="defaultOpen" and click on it
-            document.getElementById("defaultOpen").click();
+          <div id="Links" class="tabcontent">
+
+          </div>
+        </div>
+        <div class="footer"><center>
+        </center></div>
+        <script>
+          function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+
+          // Get the element with id="defaultOpen" and click on it
+          document.getElementById("defaultOpen").click();
         </script>
     </body>
 </html>
