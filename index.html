@@ -9,23 +9,46 @@
     </head>
     <body>
         <div class="header">
-          <center><img src="images/construction.gif"/></center>
+          <img src="images/construction.gif"/>
           <div class="tab">
             <button class="tablinks" onclick="openTab(event, 'Me')" id="defaultOpen">About me</button>
             <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
             <!--<button class="tablinks" onclick="openTab(event, 'Computerware')">Computerware</button>-->
-            <!--<button class="tablinks" onclick="openTab(event, 'Links')">Links</button>-->
+            <button class="tablinks" onclick="openTab(event, 'Links')">Links</button>
           </div>
         </div>
         <div class="content">
           
           <div id="Me" class="tabcontent">
-            <h3>About me</h3>
-            <p>I'm amazing!</p>
-            <h4>Why this website looks like it's from 1995</h4>
+            <h2>About me</h2>
+            <p>Hey there, I'm Wojciech!</p>
+
+            <h3>Links</h3>
+            <ul class="link-list">
+              <li>
+                <a href="https://github.com/wskarbek">
+                  <img class="link-list-icon" src="images/logos/github.png"/>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/wskarbek">
+                  <img class="link-list-icon" src="images/logos/linkedin.png"/>
+                </a>
+              </li>
+              <!--<li>
+                <a href="#">
+                  <img class="link-list-icon" src="images/logos/youtube.png"/>
+                </a>
+                <img class="list-flag" src="images/poland.gif"/>
+                <img class="list-new" src="images/new.gif"/>
+              </li>-->
+            </ul>
+
+            <h2>Q&A</h2>
+            <h3>Why this website looks like it's from 1995</h3>
             <p>
               I miss times when websites were simple and full of colorfull gifs. Since this website is about me, it reflects my nostalgia.
-              My projects are usually made using modern frameworks
+              My other projects are built with modern frameworks.
             </p>
             <img src="images/welcome to the internet.gif"/>
           </div>
@@ -36,12 +59,12 @@
             <ul>
               <li>
                 <div class="project">
-                  <h4>
+                  <h4 class="list-title">
                     cocktail-app
-                    <a href="https://github.com/wskarbek/cocktail-app"><img class="list-icon" src="images/github.png"/></a>
-                    <img class="list-icon" src="images/new.gif"/>
+                    <img class="list-new" src="images/new.gif"/>
                   </h4>
-                  <span>Cocktail App is a client - server application made using React and Express about various coctail drinks. It was a project for BIU course at PJAIT.</span>
+                  <a href="https://github.com/wskarbek/cocktail-app"><img class="link-list-icon-small" src="images/logos/github.png"/></a>
+                  <p class="list-description">Cocktail App is a client - server application made using React and Express about various coctail drinks. It was a project for BIU course at PJAIT.</p>
                 </div>
               </li>
             </ul>
@@ -52,11 +75,13 @@
           </div>
 
           <div id="Links" class="tabcontent">
-
+            <a href="http://cs.gettysburg.edu/~duncjo01/">John D. Duncan III's Website</a>
           </div>
         </div>
-        <div class="footer"><center>
-        </center></div>
+        <div class="footer">
+          <img src="images/vim.gif"/>
+          <img src="images/cat.gif"/>
+        </div>
         <script>
           function openTab(evt, tabName) {
             var i, tabcontent, tablinks;
