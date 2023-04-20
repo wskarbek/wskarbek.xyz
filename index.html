@@ -8,47 +8,150 @@
         <link rel="icon" href="favicon.ico" type="image/x-icon"/>
     </head>
     <body>
+        <!-- HEADER -->
         <div class="header">
-            Wojtek
-            <div class="tab">
-              <button class="tablinks" onclick="openTab(event, 'Me')" id="defaultOpen">About me</button>
-              <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
-              <button class="tablinks" onclick="openTab(event, 'Computerware')">Computerware</button>
-            </div>
         </div>
+        <!-- CONTENT -->
         <div class="content">
-            
-            <!-- Tab content -->
+          <div class="sidenav">
+            <div class="category">Me</div>
+            <button class="tablinks" onclick="openTab(event, 'Me')" id="defaultOpen">About me</button>
+            <button class="tablinks" onclick="openTab(event, 'Projects')">Projects<img src="images/icons/updated.gif"/></button>
+            <button class="tablinks" onclick="openTab(event, 'QAA')">Q&A</button>
+            <!--<button class="tablinks" onclick="openTab(event, 'Trash')">Trash</button>-->
+            <button class="tablinks" onclick="openTab(event, 'Links')">Links<img src="images/icons/updated.gif"/></button>
+          </div>
+          <div class="main">
+
             <div id="Me" class="tabcontent">
-              <h3>About me</h3>
+              <h2>About me</h2>
+              <p>Hey there, I'm Wojciech!</p>
+              <p>This is my webpage. Please enjoy your stay here!</p>
+              <h3>Links</h3>
+              <ul>
+                <li>
+                  <a href="https://github.com/wskarbek">
+                    <img class="sm-icon" src="images/logos/github.png"/>
+                  </a>
+                </li>
+                <li>                  
+                  <a href="https://www.linkedin.com/in/wskarbek">
+                    <img class="sm-icon" src="images/logos/linkedin.png"/>
+                  </a>
+                </li>
+                <!--<li>
+                  <a href="#">
+                    <img class="sm-icon" src="images/logos/youtube.png"/>
+                  </a>
+                  <img class="icon-flag" src="images/icons/poland.gif"/>
+                  <img class="icon-new" src="images/icons/new.gif"/>
+                </li>-->
+              </ul>
+              <img src="images/construction.gif"/>
             </div>
-            
+
             <div id="Projects" class="tabcontent">
-              <h3>Projects</h3>
-              <h6>Projects I'm working on or wokred in the past</h6>
+              <h1>Projects</h1>
+              <h3>Projects I'm working on or worked in the past</h3>
+              <ul>
+                <li>
+                  <div class="project">
+                    <h4 class="list-title">
+                      blogpost 
+                      <img class="list-new" src="images/icons/new.gif"/>
+                    </h4>
+                    <a href="https://github.com/wskarbek/blogpost"><img class="sm-icon-small" src="images/logos/github.png"/></a>
+                    <p class="list-description">I always wanted to have a blog. So I'm making one.</p>
+                  </div>
+                  <hr/>
+                  <div class="project">
+                    <h4 class="title">
+                      cocktail-app
+                    </h4>
+                    <a href="https://github.com/wskarbek/cocktail-app"><img class="sm-icon-small" src="images/logos/github.png"/></a>
+                    <p class="description">
+                      Cocktail App is a client - server application made using React and Express about various coctail drinks. It was a project for BIU course at PJAIT.
+                    </p>
+                  </div>
+                  <hr/>
+                  <div class="project">
+                    <h4 class="list-title">
+                      arc-project
+                    </h4>
+                    <a href="https://github.com/wskarbek/arc-project"><img class="sm-icon-small" src="images/logos/github.png"/></a>
+                    <p class="description">
+                      Spanish language learning app. It was a project for Cloud Solutions Architecture course at PJAIT.
+                      On this course we've learned about Firebase and Google Cloud API. The website is in Polish language.
+                    </p>
+                  </div>                         
+                  <hr/>
+                </li>
+              </ul>
             </div>
-            
+
             <div id="Computerware" class="tabcontent">
               <h3>Computerware</h3>
+              <img src="images/construction.gif"/>
             </div>
-        </div>
-          <script>
-            function openTab(evt, tabName) {
-              var i, tabcontent, tablinks;
-              tabcontent = document.getElementsByClassName("tabcontent");
-              for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-              }
-              tablinks = document.getElementsByClassName("tablinks");
-              for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-              }
-              document.getElementById(tabName).style.display = "block";
-              evt.currentTarget.className += " active";
-            }
 
-            // Get the element with id="defaultOpen" and click on it
-            document.getElementById("defaultOpen").click();
+            <div id="Trash" class="tabcontent">
+              <h3>You shouldn't be here</h3>
+              <img src="images/welcome to the internet.gif"/>
+              <img src="images/random/xp.gif"/>
+            </div>
+
+            <div id="QAA" class="tabcontent">
+              <h2>Q&A</h2>
+              <h3>Why this website looks like it's from 1995</h3>
+              <p>
+                I miss times when websites were simple and full of colorfull gifs. Since this website is about me, it reflects my nostalgia.
+                My other projects are built with modern frameworks.
+              </p>
+              <img src="images/construction.gif"/>
+            </div>
+
+            <div id="Links" class="tabcontent">
+              <h2>Webpages I like and often visit</h2>
+              <ul>
+                <li>
+                  <a href="http://cs.gettysburg.edu/~duncjo01/">John D. Duncan III's Website</a>
+                </li>
+                <li>
+                  <a href="https://neocities.org/">Neocities - reincarnation of Geocities</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="img-row">
+            <img src="images/cat.gif"/>
+          </div>
+          <div class="img-row">
+            <img src="images/vim.gif"/>
+            <img src="images/logos/vanillajs.png"/>
+          </div>
+          Last update: 20.04.2023
+        </div>
+
+        <script>
+          function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+
+          // Get the element with id="defaultOpen" and click on it
+          document.getElementById("defaultOpen").click();
         </script>
     </body>
 </html>

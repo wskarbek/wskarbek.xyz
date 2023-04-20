@@ -1,25 +1,153 @@
-/* Style the tab */
-body {
-    font-family: Arial;
-    color: white;
-    background-color: black;
-    margin: 10px 0;
+@media only screen and (min-width: 1600px){
+  body {
+    margin: 10px 25vw;
+  }
 }
 
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+@media only screen and (min-width: 1000px) and (max-width: 1600px) {
+  body {
+    margin: 10px 10vw;
   }
-  
-  /* Style the buttons inside the tab */
-  .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
+}
+
+body {
+  background-image: url("bg.png");
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+  color: #aa94bd
+}
+
+@media only screen and (min-height: 900px) {
+  .content {
+    min-height: 700px;
+    margin-bottom: -50px;
   }
+}
+
+@media only screen and (max-height: 900px) {
+  .content {
+    min-height: 500px;
+    margin-bottom: -50px;
+  }
+}
+
+.content .sidenav{
+  width: 100px;
+  position: fixed;
+  background-color: rgb(24, 24, 24);
+}
+
+.content .sidenav button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: white;
+  width: 100px;
+}
+
+.content .sidenav .category {
+  background-color: rgb(41, 41, 41);
+  text-align: center;
+  font-size: 14px;
+  padding: 5px 0;
+  color: white;
+  width: 100px;
+}
+
+.content .main{
+  margin-left: 100px;
+  padding: 10px;
+}
+
+.footer {
+  height: 50px;
+}
+
+/* HEADER */
+.header {
+  height: 80px;
+}
+
+.header img {
+  margin: 5px auto;
+  display: block;
+}
+
+.header .tab {
+  overflow: hidden;
+  border: 1px solid black;
+  background-color: rgb(124, 124, 124);
+}
+
+.header .tab button.active {
+  background-color: rgb(199, 199, 199);
+}
+
+/* CONTENT */
+/* Reduce absurdly huge h1-h6 margins */
+.content .tabcontent h1,
+.content .tabcontent h2,
+.content .tabcontent h3,
+.content .tabcontent h4,
+.content .tabcontent h5,
+.content .tabcontent h6 {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+/* Everything is based on lists so they need to be without dots */
+ul li {
+  list-style-type: none;
+}
+
+/* LISTS */
+.link-list {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.sm-icon {
+  max-width: 70px;
+}
+
+.sm-icon-small {
+  max-width: 40px;
+}
+
+.icon-flag {
+  max-width: 20px;
+}
+
+.icon-new {
+  max-width: 30px;
+}
+
+.list-description {
+  margin-top: 3px;
+}
+
+/* Projects */
+.project-list-icon {
+  max-width: 50px;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+}
+
+.footer img {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
