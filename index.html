@@ -10,78 +10,102 @@
     <body>
         <div class="header">
           <img src="images/construction.gif"/>
-          <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'Me')" id="defaultOpen">About me</button>
-            <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
-            <!--<button class="tablinks" onclick="openTab(event, 'Computerware')">Computerware</button>-->
-            <button class="tablinks" onclick="openTab(event, 'Links')">Links</button>
-          </div>
         </div>
         <div class="content">
-          
-          <div id="Me" class="tabcontent">
-            <h2>About me</h2>
-            <p>Hey there, I'm Wojciech!</p>
-
-            <h3>Links</h3>
-            <ul class="link-list">
-              <li>
-                <a href="https://github.com/wskarbek">
-                  <img class="link-list-icon" src="images/logos/github.png"/>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/wskarbek">
-                  <img class="link-list-icon" src="images/logos/linkedin.png"/>
-                </a>
-              </li>
-              <!--<li>
-                <a href="#">
-                  <img class="link-list-icon" src="images/logos/youtube.png"/>
-                </a>
-                <img class="list-flag" src="images/poland.gif"/>
-                <img class="list-new" src="images/new.gif"/>
-              </li>-->
-            </ul>
-
-            <h2>Q&A</h2>
-            <h3>Why this website looks like it's from 1995</h3>
-            <p>
-              I miss times when websites were simple and full of colorfull gifs. Since this website is about me, it reflects my nostalgia.
-              My other projects are built with modern frameworks.
-            </p>
-            <img src="images/welcome to the internet.gif"/>
+          <div class="sidenav">
+            <div class="category">Me</div>
+            <button class="tablinks" onclick="openTab(event, 'Me')" id="defaultOpen">About me<img src="images/updated.gif"/></button>
+            <button class="tablinks" onclick="openTab(event, 'Projects')">Projects<img src="images/updated.gif"/></button>
+            <button class="tablinks" onclick="openTab(event, 'QAA')">Q&A<img src="images/updated.gif"/></button>
+            <!--<button class="tablinks" onclick="openTab(event, 'Trash')">Trash</button>-->
+            <button class="tablinks" onclick="openTab(event, 'Links')">Links<img src="images/updated.gif"/></button>
           </div>
-          
-          <div id="Projects" class="tabcontent">
-            <h1>Projects</h1>
-            <h3>Projects I'm working on or worked in the past</h3>
-            <ul>
-              <li>
-                <div class="project">
-                  <h4 class="list-title">
-                    cocktail-app
-                    <img class="list-new" src="images/new.gif"/>
-                  </h4>
-                  <a href="https://github.com/wskarbek/cocktail-app"><img class="link-list-icon-small" src="images/logos/github.png"/></a>
-                  <p class="list-description">Cocktail App is a client - server application made using React and Express about various coctail drinks. It was a project for BIU course at PJAIT.</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          
-          <div id="Computerware" class="tabcontent">
-            <h3>Computerware</h3>
-          </div>
-
-          <div id="Links" class="tabcontent">
-            <a href="http://cs.gettysburg.edu/~duncjo01/">John D. Duncan III's Website</a>
+          <div class="main">
+            <div id="Me" class="tabcontent">
+              <h2>About me</h2>
+              <p>Hey there, I'm Wojciech!</p>
+              <p>This is my webpage. Please enjoy your stay here!</p>
+              <h3>Links</h3>
+              <table class="icon-table">
+                <tr>
+                  <td>
+                    <a href="https://github.com/wskarbek">
+                      <img class="sm-icon" src="images/logos/github.png"/>
+                    </a>
+                  </td>
+                  <td>
+                    <a href="https://www.linkedin.com/in/wskarbek">
+                      <img class="sm-icon" src="images/logos/linkedin.png"/>
+                    </a>
+                  </td>
+                </tr>
+              </table>
+                <!--<li>
+                  <a href="#">
+                    <img class="link-list-icon" src="images/logos/youtube.png"/>
+                  </a>
+                  <img class="list-flag" src="images/poland.gif"/>
+                  <img class="list-new" src="images/new.gif"/>
+                </li>-->
+              </ul>
+            </div>
+            <div id="Projects" class="tabcontent">
+              <h1>Projects</h1>
+              <h3>Projects I'm working on or worked in the past</h3>
+              <ul>
+                <li>
+                  <div class="project">
+                    <h4 class="list-title">
+                      cocktail-app
+                      <img class="list-new" src="images/new.gif"/>
+                    </h4>
+                    <a href="https://github.com/wskarbek/cocktail-app"><img class="link-list-icon-small" src="images/logos/github.png"/></a>
+                    <p class="list-description">Cocktail App is a client - server application made using React and Express about various coctail drinks. It was a project for BIU course at PJAIT.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div id="Computerware" class="tabcontent">
+              <h3>Computerware</h3>
+            </div>
+            <div id="Trash" class="tabcontent">
+              <h3>You shouldn't be here</h3>
+              <img src="images/welcome to the internet.gif"/>
+              <img src="images/random/xp.gif"/>
+            </div>
+            <div id="QAA" class="tabcontent">
+              <h2>Q&A</h2>
+              <h3>Why this website looks like it's from 1995</h3>
+              <p>
+                I miss times when websites were simple and full of colorfull gifs. Since this website is about me, it reflects my nostalgia.
+                My other projects are built with modern frameworks.
+              </p>
+            </div>
+            <div id="Links" class="tabcontent">
+              <h2>Webpages I like and often visit</h2>
+              <ul>
+                <li>
+                  <a href="http://cs.gettysburg.edu/~duncjo01/">John D. Duncan III's Website</a>
+                </li>
+                <li>
+                  <a href="https://neocities.org/">Neocities - reincarnation of Geocities</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+
         <div class="footer">
-          <img src="images/vim.gif"/>
-          <img src="images/cat.gif"/>
+          <div class="img-row">
+            <img src="images/cat.gif"/>
+          </div>
+          <div class="img-row">
+            <img src="images/vim.gif"/>
+            <img src="images/logos/vanillajs.png"/>
+          </div>
+          Last update: 20.04.2023
         </div>
+
         <script>
           function openTab(evt, tabName) {
             var i, tabcontent, tablinks;
