@@ -23,46 +23,49 @@ a {
 @media only screen and (min-height: 900px) {
   .content {
     min-height: 700px;
-    margin-bottom: -50px;
   }
 }
 
 @media only screen and (max-height: 900px) {
   .content {
     min-height: 500px;
-    margin-bottom: -50px;
   }
 }
 
 .content .sidenav{
   width: 100px;
   position: fixed;
-  background-color: rgb(24, 24, 24);
+  /*background-color: rgb(24, 24, 24);*/
 }
 
 .content .sidenav button {
-  background-color: inherit;
+  background-color: rgb(54, 54, 54);
   border: none;
   outline: none;
   cursor: pointer;
   padding: 8px 16px;
   font-size: 14px;
   color: white;
-  width: 100px;
+  width: 150px;
+}
+
+.content .sidenav button:hover {
+  background-color: rgb(107, 107, 107);
 }
 
 .content .sidenav .category {
-  background-color: rgb(41, 41, 41);
+  background-color: rgb(107, 107, 107);
   text-align: center;
   font-size: 14px;
   padding: 5px 0;
   color: white;
-  width: 100px;
+  width: 150px;
+  margin-top: 5px; /* Seperates categories from each other */
 }
 
 .content .main{
-  margin-left: 100px;
-  padding: 10px;
+  margin-left: 150px;
+  padding: 10px 30px;
 }
 
 .footer {
@@ -71,22 +74,14 @@ a {
 
 /* HEADER */
 .header {
-  height: 80px;
+  min-height: 80px;
 }
 
-.header img {
-  margin: 5px auto;
+.header img{
+  margin-left: auto;
+  margin-right: auto;
   display: block;
-}
-
-.header .tab {
-  overflow: hidden;
-  border: 1px solid black;
-  background-color: rgb(124, 124, 124);
-}
-
-.header .tab button.active {
-  background-color: rgb(199, 199, 199);
+  width: 100px;
 }
 
 /* CONTENT */
@@ -110,12 +105,12 @@ ul li {
   list-style-type: none;
 }
 
-/* LISTS */
 .link-list {
   list-style-type: none;
   padding-left: 0px;
 }
 
+/* CLASSES */
 .sm-icon {
   max-width: 70px;
 }

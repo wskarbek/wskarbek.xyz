@@ -10,46 +10,51 @@
     <body>
         <!-- HEADER -->
         <div class="header">
+          <!--<img src="images/fox.png"/>-->
         </div>
         <!-- CONTENT -->
         <div class="content">
           <div class="sidenav">
+            <!-- SIDENAV LINKS -->
             <div class="category">Me</div>
             <button class="tablinks" onclick="openTab(event, 'Me')" id="defaultOpen">About me</button>
-            <button class="tablinks" onclick="openTab(event, 'Projects')">Projects<img src="images/icons/updated.gif"/></button>
-            <button class="tablinks" onclick="openTab(event, 'QAA')">Q&A</button>
-            <!--<button class="tablinks" onclick="openTab(event, 'Trash')">Trash</button>-->
-            <button class="tablinks" onclick="openTab(event, 'Links')">Links<img src="images/icons/updated.gif"/></button>
+            <button class="tablinks" onclick="openTab(event, 'Projects')">Projects&nbsp;<img src="images/icons/updated.gif"/></button>
+            <button class="tablinks" onclick="openTab(event, 'QAA')">Q&A&nbsp;<img src="images/icons/updated.gif"/></button>
+            <div class="category">Links</div>
+            <button class="tablinks" onclick="openWeb(event, 'https://github.com/wskarbek')">
+              <img class="sm-icon" src="images/logos/github.png"/>
+            </button>
+            <button class="tablinks" onclick="openWeb(event, 'https://www.linkedin.com/in/wskarbek')">
+              <img class="sm-icon" src="images/logos/linkedin.png"/>
+            </button>
+            <!--<button class="tablinks" onclick="openWeb(event, 'https://blogpost.wskarbek.xyz')">
+              <img class="sm-icon" src="images/logos/blogpost.png"/>
+              <img src="images/icons/new.gif"/>
+            </button> Soon :)-->
+            <!--<button class="tablinks" onclick="openWeb(event, '#')">
+              <img class="sm-icon" src="images/logos/youtube.png"/>
+              <img src="images/icons/new.gif"/>
+            </button> Soon :)-->
+            <div class="category">Random</div>
+            <button class="tablinks" onclick="openTab(event, 'Links')">Links&nbsp;<img src="images/icons/updated.gif"/></button>
+            <button class="tablinks" onclick="openTab(event, '88x31')">88x31<img src="images/icons/new.gif"/></button>
+            <!--<button class="tablinks" onclick="openTab(event, 'TEMPLATE')">TEMPLATE</button>-->
           </div>
+          <!-- CONTENT -->
           <div class="main">
-
+            <!-- About me -->
             <div id="Me" class="tabcontent">
               <h2>About me</h2>
               <p>Hey there, I'm Wojciech!</p>
+              <p>
+                I'm software engineer based in Poland. As my job I'm building applications that are usefull for people,
+                mostly web applications. I'm trully passionate about computers and computer science.
+                I'm proficient in various programming languages and frameworks.
+                Aside from IT, I'm spending my time at the gym and learning psychology.
+              </p>
               <p>This is my webpage. Please enjoy your stay here!</p>
-              <h3>Links</h3>
-              <ul>
-                <li>
-                  <a href="https://github.com/wskarbek">
-                    <img class="sm-icon" src="images/logos/github.png"/>
-                  </a>
-                </li>
-                <li>                  
-                  <a href="https://www.linkedin.com/in/wskarbek">
-                    <img class="sm-icon" src="images/logos/linkedin.png"/>
-                  </a>
-                </li>
-                <!--<li>
-                  <a href="#">
-                    <img class="sm-icon" src="images/logos/youtube.png"/>
-                  </a>
-                  <img class="icon-flag" src="images/icons/poland.gif"/>
-                  <img class="icon-new" src="images/icons/new.gif"/>
-                </li>-->
-              </ul>
-              <img src="images/construction.gif"/>
             </div>
-
+            <!-- PROJECTS -->
             <div id="Projects" class="tabcontent">
               <h1>Projects</h1>
               <h3>Projects I'm working on or worked in the past</h3>
@@ -61,7 +66,7 @@
                       <img class="list-new" src="images/icons/new.gif"/>
                     </h4>
                     <a href="https://github.com/wskarbek/blogpost"><img class="sm-icon-small" src="images/logos/github.png"/></a>
-                    <p class="list-description">I always wanted to have a blog. So I'm making one.</p>
+                    <p class="list-description">I always wanted to have a blog. So I'm making one. Powered by Angular.</p>
                   </div>
                   <hr/>
                   <div class="project">
@@ -88,39 +93,58 @@
                 </li>
               </ul>
             </div>
-
-            <div id="Computerware" class="tabcontent">
-              <h3>Computerware</h3>
-              <img src="images/construction.gif"/>
-            </div>
-
-            <div id="Trash" class="tabcontent">
-              <h3>You shouldn't be here</h3>
-              <img src="images/welcome to the internet.gif"/>
-              <img src="images/random/xp.gif"/>
-            </div>
-
+            <!-- Q&A -->
             <div id="QAA" class="tabcontent">
               <h2>Q&A</h2>
+              <!--<h3>The big three?</h3>
+              <ul>
+                <li>Benchpress: 70kgx12</li>
+                <li>Squat: 40kgx12</li>
+                <li>Deadlift: 40kgx12</li>
+              </ul>-->
               <h3>Why this website looks like it's from 1995</h3>
               <p>
-                I miss times when websites were simple and full of colorfull gifs. Since this website is about me, it reflects my nostalgia.
-                My other projects are built with modern frameworks.
+                I miss times when websites were simple and full of colorfull gifs and were owned completly by person
+                that made it. Since this website is mine only, I wanted it to be diffrent than modern websites.
+                My other projects are built with modern frameworks.<br/>
+                <img src="images/welcome to the internet.gif"/>
               </p>
               <img src="images/construction.gif"/>
             </div>
-
+            <!-- OTHER LINKS -->
             <div id="Links" class="tabcontent">
               <h2>Webpages I like and often visit</h2>
               <ul>
                 <li>
-                  <a href="http://cs.gettysburg.edu/~duncjo01/">John D. Duncan III's Website</a>
+                  <a href="http://cs.gettysburg.edu/~duncjo01/">John D. Duncan III's Website - beautiful website that inspired style of this one.</a>
                 </li>
                 <li>
                   <a href="https://neocities.org/">Neocities - reincarnation of Geocities</a>
                 </li>
+                <li>
+                  <a href="https://www.cameronsworld.net/">Cameron's World - it reminder me of old web</a>
+                </li>
               </ul>
             </div>
+            <!-- 88x31 -->
+            <div id="88x31" class="tabcontent">
+              <!--Thanks God modern frameworks have components-->
+              <h3>A collection of 88 x 31 buttons. From various places of the internet.</h3>
+              <p>I really wish I could credit the author of each one, but some of them are like 20 years old so that would be impossible.</p>
+              <a href="https://archive.is/g69cB">Some history...</a><br/><hr/>
+              <img src="images/buttons/xp.gif"/>
+              <img src="images/buttons/jojo.gif"/>
+              <img src="images/buttons/miku.gif"/>
+              <img src="images/buttons/800.gif"/>
+              <img src="images/buttons/vim.gif"/>
+              <img src="images/buttons/jjsoft.gif"/>
+            </div>
+
+            <!--<div id="Trash" class="tabcontent">
+              <h3>You shouldn't be here</h3>
+              <img src="images/welcome to the internet.gif"/>
+              <img src="images/random/xp.gif"/>
+            </div>-->
           </div>
         </div>
 
@@ -129,13 +153,19 @@
             <img src="images/cat.gif"/>
           </div>
           <div class="img-row">
-            <img src="images/vim.gif"/>
+            <img src="images/buttons/vim.gif"/>
             <img src="images/logos/vanillajs.png"/>
           </div>
-          Last update: 20.04.2023
+          Last update: 21.04.2023
         </div>
 
         <script>
+          function openWeb(evt, href) {
+            alert("You're about to open a new tab");
+            var win = window.open(href, '_blank');
+            win.focus();
+          }
+
           function openTab(evt, tabName) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
