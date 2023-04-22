@@ -13,7 +13,13 @@
 body {
   background-image: url("bg.png");
   color: white;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+button {
+  /* Buttons don't use font-family from body for some reason... */
+  font-family: monospace;
 }
 
 a {
@@ -65,7 +71,7 @@ a {
 
 .content .main{
   margin-left: 150px;
-  padding: 10px 30px;
+  padding: 2px 30px;
 }
 
 .footer {
@@ -92,10 +98,24 @@ a {
 .content .tabcontent h4,
 .content .tabcontent h5,
 .content .tabcontent h6 {
-  margin-bottom: 5px;
-  margin-top: 5px;
+  margin-bottom: 2px;
 }
 
+/* Same but for paragraphs */
+.content .tabcontent p {
+  margin-top: 2px;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+}
+
+.footer img {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
 ul {
   padding-left: 0;
 }
@@ -129,20 +149,4 @@ ul li {
 
 .list-description {
   margin-top: 3px;
-}
-
-/* Projects */
-.project-list-icon {
-  max-width: 50px;
-}
-
-/* FOOTER */
-.footer {
-  text-align: center;
-}
-
-.footer img {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
 }
