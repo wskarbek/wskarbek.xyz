@@ -18,13 +18,12 @@
             <!-- SIDENAV LINKS -->
             <div class="category">Me</div>
             <button class="tablinks" onclick="openTab(event, 'Me')" id="defaultOpen">About me</button>
-            <button class="tablinks" onclick="openTab(event, 'Projects')">Projects<br/><img src="images/icons/updated.gif"/></button>
-            <button class="tablinks" onclick="openTab(event, 'Tools')">Tools I use<br/><img src="images/icons/updated.gif"/></button>
-            <div class="category">Links</div>
+            <button class="tablinks" onclick="openTab(event, 'Projects')">Projects<br/></button>
+            <!--<button class="tablinks" onclick="openTab(event, 'Tools')">Tools I use<br/><img src="images/icons/updated.gif"/></button>-->
             <button class="tablinks" onclick="openWeb(event, 'https://github.com/wskarbek')">
               <img class="sm-icon" src="images/logos/github.png"/>
             </button>
-            <button class="tablinks" onclick="openWeb(event, 'https://www.linkedin.com/in/wskarbek')">
+            <button class="tablinks last" onclick="openWeb(event, 'https://www.linkedin.com/in/wskarbek')">
               <img class="sm-icon" src="images/logos/linkedin.png"/>
             </button>
             <!--<button class="tablinks" onclick="openWeb(event, 'https://blogpost.wskarbek.xyz')">
@@ -35,9 +34,12 @@
               <img class="sm-icon" src="images/logos/youtube.png"/>
               <img src="images/icons/new.gif"/>
             </button> Soon :)-->
+            <div class="category">Web</div>
+            <button class="tablinks" onclick="openTab(event, 'Updates')">Latest update<br/><img src="images/icons/updated.gif"/></button>
+            <button class="tablinks last" onclick="openTab(event, 'Links')">Favorite websites<br/></button>
+
             <div class="category">Random</div>
-            <button class="tablinks" onclick="openTab(event, 'Links')">Links<br/><img src="images/icons/updated.gif"/></button>
-            <button class="tablinks" onclick="openTab(event, '88x31')">88x31<br/><img src="images/icons/new.gif"/></button>
+            <button class="tablinks last" onclick="openTab(event, '88x31')">88x31<br/></button>
             <!--<button class="tablinks" onclick="openTab(event, 'TEMPLATE')">TEMPLATE</button>-->
           </div>
           <!-- CONTENT -->
@@ -115,14 +117,28 @@
                 </li>
               </ul>
             </div>
-            <!-- Tools -->
+            <!-- TOOLS -->
             <div id="Tools" class="tabcontent">
-              <h2>Tools</h2>
+              <h2>You shouldn't be here</h2>
               <img src="images/construction.gif"/>
+            </div>
+            <!-- UPDATES -->
+            <div id="Updates" class="tabcontent">
+              <h1>Website updates</h1>
+              <h3>25.04.2023</h3>
+              <h4>Added:</h4>
+              <ul>
+                <li>site updates page</li>
+              </ul> 
+              <h4>Changed:</h4>
+              <ul>
+                <li>styling, a little bit more modern</li>
+                <li>renamed 'links' to 'favorite websites' and moved to 'web' section</li>
+              </ul>
             </div>
             <!-- OTHER LINKS -->
             <div id="Links" class="tabcontent">
-              <h2>Webpages I like and often visit</h2>
+              <h1>Webpages I like and often visit</h1>
               <ul>
                 <li>
                   <a href="http://cs.gettysburg.edu/~duncjo01/">John D. Duncan III's Website - beautiful website that inspired style of this one.</a>
@@ -138,7 +154,7 @@
             <!-- 88x31 -->
             <div id="88x31" class="tabcontent">
               <!--Thanks God modern frameworks have components-->
-              <h3>A collection of 88 x 31 buttons. From various places of the internet.</h3>
+              <h1>A collection of 88 x 31 buttons. From various places of the internet.</h1>
               <p>I really wish I could credit the author of each one, but some of them very old, so that would be impossible.</p>
               <a href="https://archive.is/g69cB">Some history...</a><br/><hr/>
               <img src="images/buttons/xp.gif"/>
@@ -165,7 +181,7 @@
             <img src="images/buttons/vim.gif"/>
             <img src="images/logos/vanillajs.png"/>
           </div>
-          Last update: 22.04.2023 11:25
+          Last update: 25.04.2023
         </div>
 
         <script>

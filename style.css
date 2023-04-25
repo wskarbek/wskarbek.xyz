@@ -41,7 +41,6 @@ a {
 .content .sidenav{
   width: 100px;
   position: fixed;
-  /*background-color: rgb(24, 24, 24);*/
 }
 
 .content .sidenav button {
@@ -55,6 +54,12 @@ a {
   width: 150px;
 }
 
+.content .sidenav button.last {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  margin-bottom: 7px; /* Seperates categories from each other */
+}
+
 .content .sidenav button:hover {
   background-color: rgb(107, 107, 107);
 }
@@ -66,14 +71,26 @@ a {
   padding: 5px 0;
   color: white;
   width: 150px;
-  margin-top: 5px; /* Seperates categories from each other */
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
 
 .content .main{
-  margin-left: 150px;
-  padding: 2px 30px;
+  margin: 2px 30px 2px 180px;
+  padding: 0px 15px 15px 15px;
+  background-color: rgb(54, 54, 54);
+  border: none; /* Required for radius to work */
+  border-radius: 7px
 }
 
+.content .main h1 {
+  background-color: rgb(107, 107, 107);
+  /* CSS Magic */
+  margin: 0px -15px 0px -15px;
+  padding: 0px 15px 3px 15px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
 .footer {
   height: 50px;
 }
