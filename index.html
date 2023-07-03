@@ -18,14 +18,8 @@
             <!-- SIDENAV LINKS -->
             <div class="category">Me</div>
             <button class="tablinks" onclick="openTab(event, 'Me')" id="defaultOpen">About me</button>
-            <button class="tablinks" onclick="openTab(event, 'Projects')">Projects<br/></button>
+            <button class="tablinks last" onclick="openTab(event, 'Projects')">Projects<br/></button>
             <!--<button class="tablinks" onclick="openTab(event, 'Tools')">Tools I use<br/><img src="images/icons/updated.gif"/></button>-->
-            <button class="tablinks" onclick="openWeb(event, 'https://github.com/wskarbek')">
-              <img class="sm-icon" src="images/logos/github.png"/>
-            </button>
-            <button class="tablinks last" onclick="openWeb(event, 'https://www.linkedin.com/in/wskarbek')">
-              <img class="sm-icon" src="images/logos/linkedin.png"/>
-            </button>
             <!--<button class="tablinks" onclick="openWeb(event, 'https://blogpost.wskarbek.xyz')">
               <img class="sm-icon" src="images/logos/blogpost.png"/>
               <img src="images/icons/new.gif"/>
@@ -71,12 +65,28 @@
               </p>
               <h3>Contact</h3>
               <ul>
-                <li>E-mail: wskarbek@outlook.com</li>
-                <li>You can also message me on LinkedIn</li>
+                <li>E-mail: wskarbek@outlook.com <a href="mailto: wskarbek@outlook.com">Send mail</a></li>
+                <li>LinkedIn:
+                  <a href="https://www.linkedin.com/in/wskarbek">
+                    <!--<img class="sm-icon" src="images/logos/linkedin.png"/>-->
+                    Link
+                  </a>
+                </li>
+                <li>Github: 
+                  <a href="https://github.com/wskarbek">
+                    <!--<img class="sm-icon" src="images/logos/github.png"/>-->
+                    Link
+                  </a>
+                </li>
+                <li>Twitter:
+                  <a href="https://twitter.com/w_skarbek">
+                    Link
+                  </a>
+                </li>
               </ul>
-              <h3>Crypto address</h3>
+              <!--<h3>Crypto address</h3>
               <img src="images/icons/xmr.svg" style="width:10px"/>
-              <span style="font-size: 9px;">83fGvFPQ9PUTwCT2uVjoeLeVk4RuhAgmA5mhZsyUskxqQm7esqqB8MwegCfhxPCvkoX3EiXzngSTSjmRAz7rMT415GVAkdv</span>
+              <span style="font-size: 9px;">83fGvFPQ9PUTwCT2uVjoeLeVk4RuhAgmA5mhZsyUskxqQm7esqqB8MwegCfhxPCvkoX3EiXzngSTSjmRAz7rMT415GVAkdv</span>-->
             </div>
             <!-- PROJECTS -->
             <div id="Projects" class="tabcontent">
@@ -125,7 +135,7 @@
             <!-- UPDATES -->
             <div id="Updates" class="tabcontent">
               <h1>Website updates</h1>
-              <h3>25.04.2023</h3>
+              <h3>14.06.2023</h3>
               <h4>Added:</h4>
               <ul>
                 <li>site updates page</li>
@@ -185,12 +195,6 @@
         </div>
 
         <script>
-          function openWeb(evt, href) {
-            alert("You're about to open a new tab");
-            var win = window.open(href, '_blank');
-            win.focus();
-          }
-
           function openTab(evt, tabName) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
