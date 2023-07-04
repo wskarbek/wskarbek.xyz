@@ -43,7 +43,7 @@ a {
   position: fixed;
 }
 
-.content .sidenav button {
+.content .sidenav a{
   background-color: rgb(54, 54, 54);
   border: none;
   outline: none;
@@ -51,10 +51,12 @@ a {
   padding: 8px 16px;
   font-size: 14px;
   color: white;
-  width: 150px;
+  width: 118px;
+  display: inline-block;
+  text-align: center;
 }
 
-.content .sidenav button.last {
+.content .sidenav a.last {
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
   margin-bottom: 7px; /* Seperates categories from each other */
@@ -76,18 +78,16 @@ a {
 }
 
 .content .main{
-  margin: 2px 30px 2px 180px;
-  padding: 0px 15px 15px 15px;
-  background-color: rgb(54, 54, 54);
   border: none; /* Required for radius to work */
   border-radius: 7px
 }
 
 .content .main h1 {
   background-color: rgb(107, 107, 107);
+  font-size: 14px;
   /* CSS Magic */
   margin: 0px -15px 0px -15px;
-  padding: 0px 15px 3px 15px;
+  padding: 5px 15px 7px 15px;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
 }
@@ -109,6 +109,14 @@ a {
 
 /* CONTENT */
 /* Reduce absurdly huge h1-h6 margins */
+.tabcontent {
+  margin: 2px 30px 7px 180px;
+  padding: 0px 15px 15px 15px;
+  background-color: rgb(54, 54, 54);
+  border: none;
+  border-radius: 7px;
+}
+
 .content .tabcontent h1,
 .content .tabcontent h2,
 .content .tabcontent h3,
