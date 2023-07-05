@@ -29,82 +29,58 @@
 
             <div class="category">Random</div>
             <a class="tablinks last" href="./buttons.html">88x31<br/></a>
+
+            <div class="category">Random</div>
+            <div class="tablinks last" href="./buttons.html">88x31<br/></div>
           </div>
           <!-- CONTENT -->
           <div class="main">
             <!-- About me -->
-            <div id="Me" class="tabcontent">
+            <div id="Me" class="section">
               <h1>About me</h1>
               <p>Hey there, I'm Wojciech!</p>
+              <img class="me" src="images/me.png"/>
               <p>
-                I'm software engineer living in Gdansk, Poland. I specialize in developing web applications that make
-                positive impact on people's lives. My passion for computers goes beyond programming, as I also enjoy
-                building them from scratch. When I'm not working on IT projects, you can find me hitting the gym
-                or exploring the field of psychology.
+                I'm software engineer living in Gdansk, Poland. I specialize in web applications. 
               </p>
               <p>
-                Welcome to my webpage!
-                I hope you'll feel right at home here and find something interesting or useful during your visit.
+                Welcome to my small website. It's inspired by the old web, where websites were simple and created only by
+                person who owned it.
                 Thank you for stopping by!
               </p>
-              <h3>Why this website looks like it's from 1995?</h3>
-              <p>
-                I miss times when websites were simple, full of colorfull GIFs and created solely by the individuals
-                who owned them. Since this website is exclusively mine, I wanted to give it unique touch that sets it
-                apart from the more contemporary designs. Additionally, given its size and scope as small personal site,
-                there was no need for me to use massive dynamic frameworks like Angular or React. By using simpler approach,
-                the site remains compact and fast, with a current size of just 595 KB.
-                Of course, my other projects do utilize more modern frameworks.<br/><br/>
-                <img src="images/welcome to the internet.gif"/>
-              </p>
+              <img src="images/welcome to the internet.gif"/>
             </div>
             <!-- PROJECTS -->
-            <div id="Projects" class="tabcontent">
+            <div id="Projects" class="section">
               <h1>Projects</h1>
-              <h3>Projects I'm working on or worked in the past</h3>
               <ul>
                 <li>
                   <div class="project">
-                    <h4 class="list-title">
+                    <p class="list-title">
                       blogpost 
                       <img class="list-new" src="images/icons/new.gif"/>
-                    </h4>
+                    </p>
                     <a href="https://github.com/wskarbek/blogpost"><img class="sm-icon-small" src="images/logos/github.png"/></a>
                     <p class="list-description">Creating a blog has been a long-held ambition of mine, and now I'm excited to turn that dream into a reality! Powered by Angular.</p>
                   </div>
-                  <!--<div class="project">
-                    <h4 class="title">
-                      cocktail-app
-                    </h4>
-                    <a href="https://github.com/wskarbek/cocktail-app"><img class="sm-icon-small" src="images/logos/github.png"/></a>
-                    <p class="description">
-                      Cocktail App is a client - server application made using React and Express about various coctail drinks. It was a project for BIU course at PJAIT.
-                    </p>
-                  </div>
-                  <hr/>
-                  <div class="project">
-                    <h4 class="list-title">
-                      arc-project
-                    </h4>
-                    <a href="https://github.com/wskarbek/arc-project"><img class="sm-icon-small" src="images/logos/github.png"/></a>
-                    <p class="description">
-                      Spanish language learning app. It was a project for Cloud Solutions Architecture course at PJAIT.
-                      On this course we've learned about Firebase and Google Cloud API. The website is in Polish language.
-                    </p>
-                  </div> 
-                  <hr/>-->
                 </li>
               </ul>
             </div>
+            <!-- BLOG -->
+            <div id="Blog" class="section">
+              <h1>Blog</h1>
+              <ul id="blogposts-js"></ul>
+              <div id="api-test"></div>
+            </div>
             <!-- OTHER LINKS -->
-            <div id="Links" class="tabcontent">
+            <div id="Links" class="section">
               <h1>Websites that inspired looks of this one</h1>
               <ul>
                 <li>
                   <a href="http://cs.gettysburg.edu/~duncjo01/">John D. Duncan III's Website</a>
                 </li>
                 <li>
-                  <a href="https://dimden.dev/">Dimden's sidte</a>
+                  <a href="https://dimden.dev/">Dimden's site</a>
                 </li>
                 <li>
                   <a href="https://www.cameronsworld.net/">Cameron's World</a>
@@ -125,7 +101,8 @@
             <img src="images/buttons/vim.gif"/>
             <img src="images/logos/vanillajs.png"/>
           </div>
-          Last update: 04.07.2023
+          Last update: 05.07.2023
         </div>
+        <script type="text/javascript" src="js/blog.js"></script>
     </body>
 </html>

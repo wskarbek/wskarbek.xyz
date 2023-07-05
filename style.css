@@ -1,20 +1,9 @@
-@media only screen and (min-width: 1600px){
-  body {
-    margin: 10px 25vw;
-  }
-}
-
-@media only screen and (min-width: 1000px) and (max-width: 1600px) {
-  body {
-    margin: 10px 10vw;
-  }
-}
-
 body {
   background-image: url("bg.png");
   color: white;
   font-family: monospace;
   font-size: 14px;
+  margin: 10px 10vw;
 }
 
 button {
@@ -26,16 +15,10 @@ a {
   color: #aa94bd
 }
 
-@media only screen and (min-height: 900px) {
-  .content {
-    min-height: 700px;
-  }
-}
-
-@media only screen and (max-height: 900px) {
-  .content {
-    min-height: 500px;
-  }
+.content {
+  width: 950px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .content .sidenav{
@@ -54,6 +37,22 @@ a {
   width: 118px;
   display: inline-block;
   text-align: center;
+  text-decoration: none;
+}
+
+.content .sidenav div{
+  background-color: rgb(54, 54, 54);
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: white;
+  width: 118px;
+  display: inline-block;
+}
+
+.content .sidenav a:hover {
+  text-decoration: underline;
 }
 
 .content .sidenav a.last {
@@ -77,20 +76,6 @@ a {
   border-top-right-radius: 7px;
 }
 
-.content .main{
-  border: none; /* Required for radius to work */
-  border-radius: 7px
-}
-
-.content .main h1 {
-  background-color: rgb(107, 107, 107);
-  font-size: 14px;
-  /* CSS Magic */
-  margin: 0px -15px 0px -15px;
-  padding: 5px 15px 7px 15px;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-}
 .footer {
   height: 50px;
 }
@@ -108,26 +93,47 @@ a {
 }
 
 /* CONTENT */
-/* Reduce absurdly huge h1-h6 margins */
-.tabcontent {
-  margin: 2px 30px 7px 180px;
-  padding: 0px 15px 15px 15px;
-  background-color: rgb(54, 54, 54);
-  border: none;
+.content .main{
+  border: none; /* Required for radius to work */
   border-radius: 7px;
 }
 
-.content .tabcontent h1,
-.content .tabcontent h2,
-.content .tabcontent h3,
-.content .tabcontent h4,
-.content .tabcontent h5,
-.content .tabcontent h6 {
+.content .main h1 {
+  background-color: rgb(107, 107, 107);
+  font-size: 14px;
+  /* CSS Magic */
+  margin: 0px -15px 0px -15px;
+  padding: 5px 15px 7px 15px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.section#Me img.me{
+  max-width: 150px;
+  float: right;
+  display: -webkit-box;
+}
+
+.section {
+  margin: 2px 30px 7px 180px;
+  padding: 0px 15px 3px 15px;
+  background-color: rgb(54, 54, 54);
+  order: none;
+  border-radius: 7px;
+}
+
+/* Reduce absurdly huge h1-h6 margins */
+.content .section h1,
+.content .section h2,
+.content .section h3,
+.content .section h4,
+.content .section h5,
+.content .section h6 {
   margin-bottom: 2px;
 }
 
 /* Same but for paragraphs */
-.content .tabcontent p {
+.content .section p {
   margin-top: 2px;
 }
 
